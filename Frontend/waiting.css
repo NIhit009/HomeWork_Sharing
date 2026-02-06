@@ -1,0 +1,69 @@
+    :root {
+      --primary-color: #4f46e5;    /* Deep Indigo */
+      --secondary-color: #6366f1;  /* Lighter Indigo */
+      --accent-color: #fbbf24;     /* Yellow accent */
+      --bg-color: #f3f4f6;         /* Light gray background */
+      --text-color: #111827;       /* Dark text */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: var(--text-color);
+    }
+
+    .verification-container {
+      text-align: center;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: var(--text-color);
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid var(--primary-color);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .hint {
+      font-size: 14px;
+      color: var(--secondary-color);
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }

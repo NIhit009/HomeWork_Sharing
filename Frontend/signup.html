@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Homework Platform</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+  <header class="top-header">
+    <h1>Homework Platform</h1>
+  </header>
+
+  <main>
+    <form class="auth-card" id="signup-form">
+      <h2>Sign Up</h2>
+      <ul class="errors"></ul>
+      <input type="text" placeholder="Full Name" name="name" required class="input-fullname">
+      <input type="email" placeholder="Email" name="email" required class="input-email">
+      <input type="password" placeholder="Password" name="password" required class="input-password">
+      <input type="password" placeholder="Confirm Password" name="confirm_password" class="input-confirm-password"
+        required>
+      <div class="selection-type">
+        <label><input type="radio" name="userType" required class="user-type"
+            value="Teacher"><span>Teacher</span></label>
+        <label><input type="radio" name="userType" required class="user-type"
+            value="Student" checked><span>Student</span></label>
+      </div>
+      <button type="submit" class="submit-btn">Sign Up</button>
+
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+  <script src="signUp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #F8F8FA;
+  color: #000001;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.top-header {
+  background: linear-gradient(135deg, #1EA47E, #5D82FB);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  color: #F8F8FA;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #C8563D;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== Navbar ===== */
+.navbar-section {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.main-nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #8C94A3;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: #1EA47E;
+  background: #F8F8FA;
+}
+
+.main-nav a.active {
+  background: #1EA47E;
+  color: white;
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+main h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #000001;
+}
+
+/* Homework List Cards */
+.homework-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Each homework item (JS will add <li>) */
+.homework-list li {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+  border-left: 5px solid #5D82FB;
+}
+
+.homework-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* Homework Title */
+.homework-list h3 {
+  color: #000001;
+  margin-bottom: 8px;
+}
+
+/* Homework Meta */
+.homework-list p {
+  color: #8C94A3;
+  font-size: 14px;
+}
+
+.homework-link {
+  text-decoration: none;
+  color: #000001;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.homework-link:hover {
+  color: #1EA47E;
+}
+
+.homework-list li p {
+  margin: 6px 0;
+}
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #5D82FB;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #1EA47E;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* ===== Auth Buttons Area ===== */
+.auth-buttons a, #logout-btn {
+  background: #5D82FB;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-buttons a:hover, #logout-btn:hover {
+  background: #1EA47E;
+  color: black;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 32px;
+  }
+
+  .main-nav ul {
+    gap: 12px;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Homework</title>
+  <link rel="stylesheet" href="add.css">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="top-header">
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Homework Platform</h1>
+        <p class="subtitle">Add your assignments quickly and stay organized</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar Section -->
+  <section class="navbar-section">
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="current_homework.html">Current Homework</a></li>
+        <li><a href="add_homework.html" class="active">Add Homework</a></li>
+      </ul>
+
+      <div class="auth-buttons">
+        <a href="login.html" class="btn login">Login</a>
+        <a href="signup.html" class="btn register">Register</a>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Main Form Section -->
+  <main>
+    <form id="post-form" class="form-card" enctype="multipart/form-data">
+
+      <h3>Homework Details</h3>
+
+      <ul class="error-box"></ul>
+
+      <input type="text" placeholder="Enter the module name" name="Name" required class="Input-name">
+
+      <input type="number" placeholder="Enter the Week" name="Week" required class="Input-week">
+
+      <input type="date" name="SubmissionDate" required class="Input-date">
+
+      <input type="text" placeholder="Enter the author name" name="SubmittedBy" class="Input-author">
+
+      <input type="file" required name="file" class="Input-file">
+
+      <button class="upload">Upload Homework</button>
+
+    </form>
+  </main>
+
+  <script src="addHw.js"></script>
+</body>
+</html>
